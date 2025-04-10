@@ -14,13 +14,17 @@ nav {
   height: 30px;
   background: white;
   color: black;
+  width: 100%;
+  display: flex;
+  align-items: end;
 }
 
 ul {
   list-style: none;
-  display: flex;
-  align-self: flex-end;
   margin: 0;
+  position: relative;
+  right: 10px;
+  display: flex;
 }
 
 ul > li > a {
@@ -37,4 +41,30 @@ ul > li > a {
 
 .image-presentation > img {
   max-width: 30%;
+}
+
+.coaches-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.coach-card {
+  max-width: 25%;
+  height: 200px;
+  margin: 10px;
+}
+
+.coach-card img {
+  width: 100%;
+  margin: auto;
+}
+
+.coaches-name,
+.coaches-discipline {
+  margin: 0;
+  text-align: center;
 }
